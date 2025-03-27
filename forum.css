@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+  /* navbar start */
+  *{
+     margin: 0;
+     padding: 0;
+     font-family: 'Montserrat', sans-serif;
+  }
+  
+  header {
+     background-color: white;
+     color: black;
+  }
+  
+  header p {
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+  }
+  
+  .topbar {
+     display: flex;
+     border-bottom: 1px solid black;
+     padding-left: 45px;
+     height: 36px;
+     align-items: center;
+     background-color: #1c2439;
+     color: white;
+  }
+  
+  .topbar ul li {
+     list-style: none;
+     display: flex;
+     align-items: center;
+  }
+  
+  nav {
+     display: flex;
+     flex-wrap: wrap;
+  }
+  
+  .logo {
+     display: flex;
+     align-items: center;
+  }
+  
+  .logo img {
+     width: 85px;
+     padding: 0px 0px 0px 25px;
+  }
+  .logo text{
+    font-size: 25px;
+  }
+  nav ul {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     height: 58px;
+     margin-left: auto;
+     padding-top: 7px;
+  }
+  
+  nav ul li {
+     list-style: none;
+     padding: 0 19px;
+     font-size: 17px;
+  }
+  
+  nav ul li a {
+     color: black;
+     text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+     text-decoration: underline;
+     text-decoration-color: black;
+     cursor: pointer;
+     border: 6px solid black;
+    background: #1c2439;
+    color: #fff7f5;
+    border-radius: 8px;
+  }
+  
+  .logo p {
+     font-size: 23px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+     .topbar {
+         justify-content: center;
+         padding-left: 0;
+     }
+  
+     nav {
+         flex-direction: column;
+         align-items: center;
+     }
+  
+     .logo {
+         justify-content: center;
+         width: 100%;
+     }
+  
+     nav ul {
+         flex-direction: column;
+         margin-left: 0;
+         gap: 10px;
+     }
+  
+     nav ul li {
+         padding: 10px 0;
+     }
+  }
+  
+  @media (max-width: 480px) {
+     .topbar {
+         height: auto;
+         padding: 10px;
+     }
+  
+     .topbar ul li {
+         font-size: 14px;
+     }
+  
+     .logo img {
+         width: 50px;
+         padding: 0;
+     }
+  
+     .logo p {
+         font-size: 18px;
+     }
+  
+     nav ul li {
+         font-size: 14px;
+     }
+  }
+  /* Navba end  */
+  
+  .hero {
+    background-color: #fff7f5;
+    color: #1c2439;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  
+  .hero button {
+    background-color: #1c2439;
+    color: #fff7f5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .discussions, .suggestions, .about {
+    padding: 2rem;
+  }
+  
+  .discussion-list, .suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .D-head{
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .discussion-card, .suggestion-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 1rem);
+  }
+  
+  .discussion-card h3, .suggestion-card h3 {
+    margin-top: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 7rem;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 500px;
+  }
+  .m-head{
+    padding-bottom: 20px;
+    font-size: 38px;
+  }
+  .close {
+    float: right;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #1c2439;
+    color: #fff7f5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }

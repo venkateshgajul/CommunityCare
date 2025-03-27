@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" sizes="64x64">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your Public Key
+        (function () {
+            emailjs.init({
+                publicKey: "4sq85gbfWoG8WbLfRa", // Replace with your EmailJS Public Key
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <ul>
+                <li>Report and Repair, with Community Care</li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo"><text>CommunityCare</text>
+            </div>
+            <ul>
+                <li><a href="main.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="forum.html"><i class="fa-solid fa-comment"></i> Community Forum</a></li>
+                <li><a href="viewstatus.html"><i class="fa-solid fa-message"></i> View status</a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i> About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div class="container">
+            <div class="forms">
+                <div class="form-content">
+                    <!-- Login Form -->
+                    <div class="login-form" id="login-form">
+                        <div class="title">Login</div>
+                        <form action="login.jsp" method="post">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" name="email" id="email1" placeholder="Enter your email" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" name="password" id="password1" placeholder="Enter your password" required>
+                                </div>
+                                <div class="text"><a href="forget.html">Forgot password?</a></div>
+                                <div class="button input-box">
+                                    <input type="submit" value="Submit">
+                                </div>
+                                <div class="text sign-up-text">
+                                    Don't have an account? <a href="#" onclick="toggleForm()">Signup now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Signup Form -->
+                    <div class="signup-form" id="signup-form" style="display: none;">
+                        <div class="title">Signup</div>
+                        <form id="registrationForm" onsubmit="sendMail(event)">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="name" id="name2" placeholder="Enter your name" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" id="email2" placeholder="Enter your email" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" name="password" id="password2" placeholder="Enter your password" required>
+                                </div>
+                                <div class="button input-box">
+                                    <input type="submit" value="Submit">
+                                </div>
+                                <div class="text sign-up-text">
+                                    Already have an account? <a href="#" onclick="toggleForm()">Login now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle between login and signup forms
+        function toggleForm() {
+            const loginForm = document.getElementById("login-form");
+            const signupForm = document.getElementById("signup-form");
+            loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+            signupForm.style.display = signupForm.style.display === "none" ? "block" : "none";
+        }
+
+        // Function to send registration email
+        function sendMail(event) {
+            event.preventDefault();
+            
+            var params = {
+                name: document.getElementById("name2").value,
+                email: document.getElementById("email2").value,
+            };
+            
+            const serviceID = "service_9islprw";  // Replace with your EmailJS Service ID
+            const templateID = "template_s1jnj3s"; // Replace with your EmailJS Template ID
+            
+            emailjs.send(serviceID, templateID, params)
+            .then(res => {  // Corrected from .this(res => { ... }) to .then(res => { ... })
+                console.log(res);
+                alert("Message sent successfully");
+                document.getElementById("registrationForm").submit();
+            })
+            .catch(err => {
+                console.log(err);
+                alert("Failed to send message");
+            });
+        }
+    </script>
+</body>
+</html>

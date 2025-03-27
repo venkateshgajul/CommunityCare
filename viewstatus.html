@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Status Portal</title>
+  <link rel="stylesheet" href="viewstatus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <ul>
+        <li>Report and Repair, with Community Care</li>  
+      </ul>
+    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo"><text>CommunityCare</text>
+      </div>
+      <ul> 
+        <li><a href="main.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+        <li><a href="forum.html"><i class="fa-solid fa-comment"></i>  Community Forum</a></li>
+        <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i>  About us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="body1">
+    <div class="container">
+      <h1>Issue Status Portal</h1>
+      <form id="statusForm" action="viewstatus.jsp" method="post">
+        <div class="form-group">
+          <label for="email">Registered Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Registered Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="issueType">Type of Issue *</label>
+          <select id="issueType" name="issueType" required>
+            <option value="">Select issue type</option>
+            <option value="waterIssue">Water Issue</option>
+            <option value="electricityIssue">Electricity Issue</option>
+            <option value="damagedRoadIssue">Damaged Road Issue</option>
+            <option value="sanitationIssue">Sanitation Issue</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="captcha">Enter CAPTCHA *</label>
+          <div class="captcha-container">
+            <span id="captchaText"></span>
+            <button type="button" id="refreshCaptcha">↻</button>
+          </div>
+          <input type="text" id="captchaInput" name="captcha" required>
+        </div>
+        <button type="submit" id="submitBtn">Check Status</button>
+      </form>
+      <p id="errorMessage" class="error-message"></p>
+    </div>
+  </div>
+  <script src="viewstatus.js"></script>
+</body>
+</html>

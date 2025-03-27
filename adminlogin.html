@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Login</title>
+    <link rel="stylesheet" href="adminlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="icon" href="images/logo.png" type="image/x-icon" sizes="64x64">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <ul>
+                <li>Report and Repair, with Community Care</li>  
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" ><text>CommunityCare</text>
+            </div>
+                <ul> 
+                <li><a href="main.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="forum.html"><i class="fa-solid fa-comment"></i>  Community Forum</a></li>
+                <li><a href="viewstatus.html"><i class="fa-solid fa-message"></i>  View status </a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i>  About us</a></li>
+                </ul>
+        </nav>
+    </header>
+
+<div class="body2">
+    <div class="login-container">
+        <h2>ADMIN LOGIN</h2>
+        <form id="loginForm" onsubmit="return login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="adminlogin.js"></script>
+</div>
+</body>
+</html>

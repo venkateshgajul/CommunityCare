@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityCare</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" sizes="64x64">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ 
+    <header>
+        <div class="topbar">
+            <ul>
+                <li>Report and Repair, with Community Care</li>  
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" ><text>CommunityCare</text>
+            </div>
+                <ul> 
+                <li><a href="main.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="forum.html"><i class="fa-solid fa-comment"></i>  Community Forum</a></li>
+                <li><a href="viewstatus.html"><i class="fa-solid fa-message"></i>  View status </a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i>  About us</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i>  Login In</a></li>
+                <li><a href="adminlogin.html"><i class="fa-solid fa-user-tie"></i>  Admin</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/slide1.png" alt="Image 1">
+                </div>
+                <div class="slide" onclick="window.location.href='water-issue-form.html';">
+                    <img src="images/slide2.png" alt="Image 2">
+                </div>
+                <div class="slide" onclick="window.location.href='road-issue-form.html';">
+                    <img src="images/slide3.png" alt="Image 3">
+                </div>
+                <div class="slide" onclick="window.location.href='electricity-issue-form.html';">
+                    <img src="images/slide4.png" alt="Image 4">
+                </div>
+                <div class="slide" onclick="window.location.href='sanitation-issue-form.html';">
+                    <img src="images/slide5.png" alt="Image 5">
+                </div>
+            </div>
+            <button class="prev" onclick="showPrevSlide()">&#10094;</button>
+            <button class="next" onclick="showNextSlide()">&#10095;</button>
+        </div>
+        <script src="slider.js"></script>
+        
+      
+      <div class="wrapperss">
+         <div class="item item1">REPORT NOW</div>
+         <div class="item item2">BETTER INFRASTUCTURE</div>
+         <div class="item item3">TRACK PROGRESS</div>
+         <div class="item item4">RAISE CONCERNS</div>
+         <div class="item item5">COMMUNITY DRIVEN</div>
+         <div class="item item6">FIX FASTER</div>
+      </div>
+    
+
+
+
+
+<br>
+
+      <p class="report-head">GET INVOLVED</p>
+      <br>
+      <h1 class="report-head">LET'S MAKE A DIFFERENCE TODAY</h1><br>
+      <h2 class="report-head">REPORT NOW</h2><br><br>
+      <div class="issue-container1">
+        <div class="issue1">
+            <a><i class="fi fi-rr-faucet" id="icon1"></i><br>
+                <h2>Water Supply</h2><h2>Issue</h2>
+                <button class="animated-button" onclick="window.location.href='water-issue-form.html';">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                    <span class="text">Report Now</span>
+                    <span class="circle"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                  </button>
+            </a>
+            </div>
+        <div class="issue2">
+            <a><i class="fi fi-rr-road" id="icon1"></i><br>
+                <h2>Damaged Road</h2><h2>Issue</h2>
+                <button class="animated-button" onclick="window.location.href='road-issue-form.html';">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                    <span class="text">Report Now</span>
+                    <span class="circle"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                  </button>
+            </a>
+            </div>
+            <div class="issue3">
+                <a><i class="fi fi-rr-broom" id="icon1"></i><br>
+                    <h2>Sanitation<br>Issue</h2>
+                    <button class="animated-button" onclick="window.location.href='sanitation-issue-form.html';" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                        <span class="text">Report Now</span>
+                        <span class="circle"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                      </button>
+                </a>
+                </div>
+                <div class="issue1">
+                    <a><i class="fi fi-rr-plug-circle-bolt" id="icon1"></i><br>
+                        <h2>Electricity<br>Issue</h2>
+                        <button class="animated-button" onclick="window.location.href='electricity-issue-form.html';">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">Report Now</span>
+                            <span class="circle"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                          </button>
+                    </a>
+                </div>
+        </div>
+    <br><br>
+
+
+
+      <br> <br> <br> <br> 
+      <h1 class="cards-head">QUICK NAVIGATION</h1>
+      <div class="cards-container">
+        <div class="cards">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img src="images/register.png" alt="Register icon" class="icon">
+                </div>
+                <button class="button" onclick="window.location.href='login.html';">REGISTER / LOGIN</button>
+            </div>
+            
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img src="images/status.png" alt="View status icon" class="icon">
+                </div>
+                <button class="button" onclick="window.location.href='viewstatus.html';">VIEW STATUS</button>
+            </div>
+            
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img src="images/contact.png" alt="Contact icon" class="icon">
+                </div>
+                <button class="button" onclick="window.location.href='aboutus.html';">CONTACT US</button>
+            </div>
+        </div>
+    </div>
+
+      <br><br><br><br><br><br><br><br><br>
+      
+     <div class="bef-aft-body">
+      
+      <h1>WORK WE HAVE DONE</h1>
+      <div class="bef-aft-container">
+          <div class="issue">
+              <h2>Water Supply Issue</h2>
+              <div class="images">
+                <label>Before</label><img src="images/image1.avif" alt="Before Water Supply Fix">
+                  <img src="images/image1.avif" alt="After Water Supply Fix"><label>After</label>
+              </div>
+          </div>
+          <div class="issue">
+              <h2>Damaged Road Issue</h2>
+              <div class="images">
+                <label>Before</label><img src="images/image1.avif" alt="Before Road Repair">
+                  <img src="images/image1.avif" alt="After Road Repair"><label>After</label>
+              </div>
+          </div>
+          <div class="issue">
+              <h2>Electricity Issue</h2>
+              <div class="images">
+                <label>Before</label><img src="images/image1.avif" alt="Before Electricity Fix">
+                  <img src="images/image1.avif" alt="After Electricity Fix"><label>After</label>
+              </div>
+          </div>
+          <div class="issue">
+              <h2>Sanitation Issue</h2>
+              <div class="images">
+                <label>Before</label><img src="images/image1.avif" alt="Before Sanitation Fix">
+                  <img src="images/image1.avif" alt="After Sanitation Fix"><label>After</label>
+              </div>
+          </div>
+      </div>
+    </div>
+
+   <br><br><br>
+     
+    <div class="wrapperss">
+      <div class="item item1">REPORT NOW</div>
+      <div class="item item2">BETTER INFRASTUCTURE</div>
+      <div class="item item3">TRACK PROGRESS</div>
+      <div class="item item4">RAISE CONCERNS</div>
+      <div class="item item5">COMMUNITY DRIVEN</div>
+      <div class="item item6">FIX FASTER</div>
+   </div>
+       
+
+
+
+
+
+
+
+      <div class="contact-container">
+          <form action="feedback.jsp" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Tell us what you think</h2>
+                <hr>
+                <p>Suggest us more ideas and mention your review!</p>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required ></textarea>
+            <div class="rating">
+              <input type="number" name="rating" hidden>
+              <i class='bx bx-star star' style="--i: 0;"></i>
+              <i class='bx bx-star star' style="--i: 1;"></i>
+              <i class='bx bx-star star' style="--i: 2;"></i>
+              <i class='bx bx-star star' style="--i: 3;"></i>
+              <i class='bx bx-star star' style="--i: 4;"></i>
+          </div>
+  <script>
+const allStar = document.querySelectorAll('.rating .star');
+const ratingValue = document.querySelector('.rating input');
+
+allStar.forEach((item, idx) => {
+    item.addEventListener('click', function () {
+        ratingValue.value = idx + 1; 
+
+       
+        allStar.forEach(star => {
+            star.classList.replace('bxs-star', 'bx-star');
+            star.classList.remove('active');
+        });
+
+       
+        for (let i = 0; i <= idx; i++) {
+            allStar[i].classList.replace('bx-star', 'bxs-star');
+            allStar[i].classList.add('active');
+        }
+    });
+});
+  </script>
+              
+            <button class="button2">Submit</button>
+          </form>
+        <div class="contact-right">
+            <img src="images/feedback.jpeg" alt="" >
+      </div>
+      </div>
+      <br><br><br><br><br><br>
+      
+      <div class="about-us">
+          <img src="images/aboutus.avif" alt="Photo" class="photo">
+          <div class="about-content">
+              <h4>About Us</h4>
+              <h1>"Join hands, change the world.From Problems to Solutions"</h1>
+              <p>CommunityCare, acts as a bridge between citizens and authorities by streamlining the reporting process for infrastructure issues. With features like geotagging and photo uploads, users can provide accurate reports, while real-time status tracking ensures accountability. Together, we transform complaints into actionable solutions for better communities.</p>
+              <button class="btn-20" onclick="window.location.href='aboutus.html';"><span>Read More</span></button>
+          </div>
+      </div>
+      
+      </main>
+      <br><br><br>
+
+<br><br>
+      <footer>
+        <div class="container1"><p class="pf">CommunityCare</p>
+            <div class="row">
+                  <div class="col" id="company">
+                      <img src="images/logo.png" alt="" class="logo">
+                      <p>
+                        "Fix the Flaws ,Strengthen the Cause."
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+    
+    
+                  <div class="col" id="services">
+                     <h3>Services</h3>
+                     <div class="links">
+                        <a href="water-issue-form.html">Water Issue</a>
+                        <a href="sanitation-issue-form.html">Sanitation Issue</a>
+                        <a href="electricity-issue-form.html">Electricity Issue</a>
+                        <a href="road-issue-form.html">Damaged Road Issue</a>
+                     </div>
+                  </div>
+                    
+                  <div class="col" id="useful-links">
+                     <h3>Links</h3>
+                     <div class="links">
+                        <a href="viewstatus.html">Track Issue</a>
+                        <a href="forum.html">Community Forum</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="adminlogin.html">Admin</a>
+                     </div>
+                  </div>
+                    
+                  <div class="col" id="contact">
+                      <h3>Contact</h3>
+                      <div class="contact-details">
+                         <i class="fa fa-location"></i>
+                         <p>441, Chandan Nagar, Kharadi<br> Pune, Maharashtra</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-phone"></i>
+                         <p>8261111111</p>
+                      </div>
+                  </div>
+            </div>
+        
+        </div>
+    
+    </footer>
+</body>
+</html>

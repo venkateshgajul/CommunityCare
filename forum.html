@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CommunityCare - Discuss & Solve</title>
+  <link rel="stylesheet" href="forum.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" sizes="64x64">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <ul>
+                <li>Report and Repair, with Community Care</li>  
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" ><text>CommunityCare</text>
+            </div>
+                <ul> 
+                <li><a href="main.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="forum.html"><i class="fa-solid fa-comment"></i>  Community Forum</a></li>
+                <li><a href="viewstatus.html"><i class="fa-solid fa-message"></i>  View status </a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-address-card"></i>  About us</a></li>        
+        </nav>
+    </header>
+
+  <section class="hero">
+    <h1>Join the Conversation</h1>
+    <p>Share your thoughts, suggest solutions, and help build a better society.</p>
+    <button id="startDiscussionBtn">Start a Discussion</button>
+  </section>
+
+  <section id="discussions" class="discussions">
+    <h2 class="D-head">Ongoing Discussions</h2>
+    <div class="discussion-list">
+      <!-- Discussion cards will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="suggestions" class="suggestions">
+    <h2 class="D-head">Recent Suggestions</h2>
+    <div class="suggestion-list">
+      <!-- Suggestion cards will be dynamically added here -->
+    </div>
+  </section>
+
+
+
+
+  <!-- Modals -->
+  <div id="discussionModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="m-head">Start a Discussion</h2>
+      <form id="discussionForm">
+        <input type="text" id="discussionTitle" placeholder="Discussion Title" required>
+        <textarea id="discussionDescription" placeholder="Describe the problem..." required></textarea>
+        <button type="submit">Post Discussion</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="suggestionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add a Suggestion</h2>
+      <form id="suggestionForm">
+        <textarea id="suggestionText" placeholder="Your suggestion..." required></textarea>
+        <button type="submit">Post Suggestion</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="forum.js"></script>
+</body>
+</html>

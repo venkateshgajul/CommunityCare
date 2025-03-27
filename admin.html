@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Infrastructure Improvement Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Community Care</h2>
+                <p>Admin Dashboard</p>
+            </div>
+            <div class="sidebar-menu">
+                <a href="admin.html" class="active">Dashboard</a>
+                <a href="viewReport.jsp">Water Issue Reports</a>
+                <a href="electricityreport.jsp">Electricity Issue Reports</a>
+                <a href="sanitationreport.jsp">Sanitation Issue Reports</a>
+                <a href="roadreport.jsp">Road Issue Reports</a>
+                <a href="graphs.html">Graphs & Reports</a>
+                <a href="registerreport.jsp">Registered Details</a>
+                <a href="feedbackdata.jsp">Feedback Details</a>
+
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard Overview</h1>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Admin User">
+                    <span>Admin User</span>
+                    <button class="Btn" onclick="window.location.href='main.html'">
+  
+    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+    
+    <div class="text">Logout</div></button>
+  
+  
+  
+                </div>
+            </div>
+           
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>TOTAL ISSUES</h3>
+                    <div class="stat-value">250</div>
+                    <div class="stat-change positive">+12% from last month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>PENDING ISSUES</h3>
+                    <div class="stat-value">21</div>
+                    <div class="stat-change negative">+8% from last month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>RESOLVED ISSUES</h3>
+                    <div class="stat-value">300</div>
+                    <div class="stat-change positive">+15% from last month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>AVERAGE RESOLUTION TIME</h3>
+                    <div class="stat-value">4.2 days</div>
+                    <div class="stat-change positive">-0.5 days from last month</div>
+                </div>
+            </div>
+            
+
+            
+            <div class="recent-issues">
+                <h3>Recently Reported Issues</h3>
+                <table class="issues-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ISSUE</th>
+                            <th>LOCATION</th>
+                            <th>REPORTED BY</th>
+                            <th>DATE</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1254</td>
+                            <td>Pothole on Main Street</td>
+                            <td>Main St & 5th Ave</td>
+                            <td>John Smith</td>
+                            <td>May 12, 2023</td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1253</td>
+                            <td>Broken Street Light</td>
+                            <td>Oak Avenue</td>
+                            <td>Sarah Johnson</td>
+                            <td>May 11, 2023</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1252</td>
+                            <td>Water Supply Disruption</td>
+                            <td>Pine District</td>
+                            <td>Michael Brown</td>
+                            <td>May 10, 2023</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1251</td>
+                            <td>Fallen Tree Blocking Road</td>
+                            <td>Elm Street</td>
+                            <td>Emily Davis</td>
+                            <td>May 10, 2023</td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1250</td>
+                            <td>Sewage Overflow</td>
+                            <td>River Road</td>
+                            <td>Robert Wilson</td>
+                            <td>May 9, 2023</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="graphs.html" class="view-all">View All Issues →</a>
+            </div>
+        </div>
+    </div>
+   
+  
+</body>
+</html>
+

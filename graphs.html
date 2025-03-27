@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs and Reports</title>
+    <link rel="stylesheet" href="graphs.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <h1>Graphs and Reports</h1>
+        
+        <h2>Monthly Report of Infrastructure Issues</h2>
+        <div class="chart-container">
+            <canvas id="issuesChart"></canvas>
+        </div>
+        
+        <br><br>
+        
+        <div class="body1">
+            <div class="piechart">
+                <h2>Community Issue Chart</h2>
+                <canvas id="issueChart"></canvas>
+            </div>
+        </div>
+        
+        <br>
+        <button id="downloadPDF">Download PDF</button>
+    </div>
+    
+    <script src="graphs.js"></script>
+</body>
+</html>
